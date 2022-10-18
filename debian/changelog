@@ -1,0 +1,36 @@
+ruby-delorean (2.1.0-2.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Tue, 29 Dec 2020 15:45:45 +0100
+
+ruby-delorean (2.1.0-2) unstable; urgency=medium
+
+  * Team upload.
+  * d/control: Update ruby-activesupport dependency (Closes: #768737)
+               Un-pin gem2deb in Build-Depends.
+
+ -- Sebastien Badia <seb@sebian.fr>  Sat, 15 Nov 2014 18:19:09 +0100
+
+ruby-delorean (2.1.0-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ Cédric Boutillier ]
+  * debian/control: fix Vcs-* fields
+
+  [ Jonas Genannt ]
+  * Imported Upstream version 2.1.0
+  * added patch to support autopkgtests
+  * d/control:
+    - added Testsuite headers
+    - bumped up standards version to 3.9.6 (no changes needed)
+
+ -- Jonas Genannt <jonas.genannt@capi2name.de>  Thu, 09 Oct 2014 12:42:31 +0200
+
+ruby-delorean (2.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #702506)
+
+ -- Praveen Arimbrathodiyil <praveen@debian.org>  Thu, 07 Mar 2013 20:41:26 +0530

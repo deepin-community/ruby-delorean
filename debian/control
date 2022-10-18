@@ -1,0 +1,30 @@
+Source: ruby-delorean
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Praveen Arimbrathodiyil <praveen@debian.org>
+Build-Depends: debhelper (>= 7.0.50~),
+               gem2deb,
+               rake,
+               ruby-activesupport,
+               ruby-chronic,
+               ruby-rspec
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-delorean.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-delorean.git;a=summary
+Homepage: http://github.com/bebanjo/delorean
+XS-Ruby-Versions: all
+Testsuite: autopkgtest-pkg-ruby
+
+Package: ruby-delorean
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-chronic,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: lets you travel in time with Ruby by mocking Time.now
+ Delorean is a smart way to mock Ruby’s Time.now method thereby allowing
+ you to travel in time.
+ .
+ Time-travelling can be extremely useful when you're testing your application.

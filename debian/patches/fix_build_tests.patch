@@ -1,0 +1,14 @@
+Description: fix require of spec tests for DEP8 autopkgtests
+Author: Jonas Genannt <jonas.genannt@capi2name.de>
+Forwarded: not-needed
+
+--- a/spec/delorean_spec.rb
++++ b/spec/delorean_spec.rb
+@@ -1,6 +1,6 @@
+ require 'rubygems'
+ require 'active_support/all'
+-require File.expand_path("../lib/delorean", File.dirname(__FILE__))
++require 'delorean'
+ 
+ describe Delorean do
+ 
